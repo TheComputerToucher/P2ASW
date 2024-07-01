@@ -32,16 +32,20 @@
 
 #include "wchartypes.h"
 #include "tier0/valve_off.h"
+#ifdef OSX
+#include <malloc/malloc.h>
+#else
 #include <malloc.h>
+#endif
 #include <limits.h>
 #include <float.h>
 #include <stdlib.h>
 #include <string.h>
 
-#ifdef COMPILER_GCC
-#include <new>
-#else
+#ifdef COMPILER_MSVC
 #include <new.h>
+#else
+#include <new>
 #endif
 
 

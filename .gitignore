@@ -70,6 +70,18 @@ config.cfg
 *.mdmp
 *.dmp
 
+# waf stuff
+src/.lock*
+src/build
+src/.waf*
+
+# python cache is evil
+*.pyc
+
+# Deal with .DS_Store
+.DS_Store
+**/.DS_Store
+
 ## OLD
 
 # Files to ignore when considering what GIT should commit.
